@@ -1,0 +1,118 @@
+1. git init       
+	Initilizing the git in paricular path - After it it says 
+Hi@DESKTOP-1ITO4NJ MINGW64 /f/Devops/GITpractice (master)
+
+2. git config --global user.name "Archaneswar Kumar"
+
+	Configration of User name and email for getting alerts and code push
+
+3. git config --global user.email "archandevops@gmail.com"
+
+4. git config --list
+	To Show the list of files available at local git machine
+
+5. git config --global --unset user.name 
+6. git config --global --unset user.email
+	To remove the user name and email
+
+git config --list
+
+===============
+7. touch file1
+	To create a file in git
+8. ls
+	To see the list of files in git
+9. git status
+	To show the files in work space (Untracked files Heading - Red colour font) and Staging/Index area (changes to be Commited Heading - green colour font)
+10. git add filename
+
+	To change/ push the file from work space (red colour font ) to Staging area (green colour font)
+11. git status
+12. git commit -m "label" filename
+	
+	To push the file from Staging/Index area to Local reposoritary of git .
+
+13. git log
+	To check the pused files from Staging/Index area shows
+	
+	Output display as below
+
+	commit 378951c647e54fa9d6eeca242f6ce627dec7a0f9 (HEAD -> master)
+	Author: ArchanK <archandevops@gmail.com>
+	Date:   Sun May 29 10:01:00 2022 +0530
+
+    	HIMAN - it is a Lable name i given  and commit id
+
+14.git show cid
+	To display the particular commit id file information
+
+	Output display as below
+	
+	$ git show 301966d
+		commit 301966d14516c426b8a5d4b973966ed70f5b0fb7
+		Author: ArchanK <archandevops@gmail.com>
+		Date:   Sun May 29 07:20:23 2022 +0530
+
+    	Sample file1
+
+		diff --git a/file1 b/file1
+		new file mode 100644
+		index 0000000..e69de29
+
+
+touch file2 file3 file4 file5
+ls
+git status
+git add file2 file3 file4 file5
+or
+git add .
+or
+git add *
+or
+git add -A
+git status
+git commit -m "label"
+
+
+=========================
+rm -rf file-name
+
+git add file1  (workspace to staging)
+git reset head file1  (staging to workspace)
+
+git commit -m "label" (staging to local)
+git reset --soft cid (local to staging)
+
+git commit -m "label" modified-file-name  (workspace to local)
+git reset --mixed cid  (local to workspace)
+
+git reset --hard cid (to delete commit and data)
+
+
+
+
+==================================
+git clone https://github.com/polarapu/Batch79.git
+ls
+cd Batch79
+ls
+touch add file1
+git status
+git commit -m "file1"
+git status
+git log
+git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
