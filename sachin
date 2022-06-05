@@ -1,0 +1,8 @@
+Kibana
+Kibana is an open-source analytics and visualization tool that was created particularly to interact with Elasticsearch. The most common uses of Kibana are searching, viewing, and interacting with data stored internally in Elasticsearch indices.
+In Kibana, advanced data analysis and visualization may be accomplished with ease by using charts, tables, and maps.
+Features:
+•	It has a quick and uncomplicated setup procedure.
+•	You can view the data in the log to discover solutions to your difficulties in production.
+•	It provides an auto-highlighting function for the search fields to identify problems in your log files quickly.
+•	It allows you to visualize log files and display the necessary data and real-time statistics in graphics.
