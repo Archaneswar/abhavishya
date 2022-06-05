@@ -1,0 +1,115 @@
+1. Version of Current OS of Linux : hostnamectl
+
+2. List network interfaces in Linux : ifconfig -a                               or
+			       ip link show                           or
+			       ip addr                                    or
+			       ls /sys/class/net                       or
+
+3. List network interfaces using netstat command :      netstat -i
+
+4. List network interfaces using nmcli command :        nmcli device status
+
+5. Here are some common use cases for the ip command.
+
+           	To show the IP addresses assigned to an interface on your server:
+
+		[root@server ~]# ip address show 
+
+	To assign an IP to an interface, for example, enps03:
+
+		[root@server ~]# ip address add 192.168.1.254/24 dev enps03
+
+	To delete an IP on an interface:
+
+		[root@server ~]# ip address del 192.168.1.254/24 dev enps03
+
+	Alter the status of the interface by bringing the interface eth0 online:
+
+		[root@server ~]# ip link set eth0 up
+
+	Alter the status of the interface by bringing the interface eth0 offline:
+
+		[root@server ~]# ip link set eth0 down
+
+	Alter the status of the interface by changing the MTU of eth0:
+
+		[root@server ~]# ip link set eth0 mtu 9000
+
+	Alter the status of the interface by enabling promiscuous mode for eth0:
+
+		[root@server ~]# ip link set eth0 promisc on
+
+	Add a default route (for all addresses) via the local gateway 192.168.1.254 that can be reached on device eth0:
+
+		[root@server ~]# ip route add default via 192.168.1.254 dev eth0
+
+	Add a route to 192.168.1.0/24 via the gateway at 192.168.1.254:
+
+		[root@server ~]# ip route add 192.168.1.0/24 via 192.168.1.254
+
+	Add a route to 192.168.1.0/24 that can be reached on device eth0:
+
+		[root@server ~]# ip route add 192.168.1.0/24 dev eth0
+
+	Delete the route for 192.168.1.0/24 via the gateway at 192.168.1.254:
+
+		[root@server ~]# ip route delete 192.168.1.0/24 via 192.168.1.254
+
+	Display the route taken for IP 10.10.1.4:
+
+		[root@server ~]# ip route get 10.10.1.4
+
+7. To Know CPU of a server : lscpu  or nproc
+
+8.To check Memory of a Server/ Machine : free -h
+
+9. To check the Load of a server : top
+
+10. To check the Load average  of a server : uptime
+
+11. To check Size of the file  : du -sh name of the file   
+
+12. To check highest Size of the file  : du -sh * | sort -rh | head -10            
+
+####################    Practical Commands ####################################################
+
+hostname -i or ifconfig - to see ip address of a server.
+
+$ symbol means - home user
+
+# symbol means - root user (super user)
+
+ctrl+d means - exit from remote server and exit from root or home user
+
+sudo -i   --- means login to root user
+
+useradd <username> - to create user in a server
+
+passwd <username> - to create a password for particular user
+
+cat /etc/passwd - to view users in a linux server
+
+lscpu or nproc - to view cpu's of a server
+
+cat /etc/redhat-release - to view the redhat version of OS
+
+ping <IP address>- to check the status of a server
+
+ssh <username>@IP - login to remote machines from one server to another server
+
+ps -ef|grep java - to check java process ids in a server
+
+netstat -tnlp - to check application running ports in a server
+
+free -h or free -g - to view the memory in a server
+
+top - to view the current utilisation of cpu and memory along with process ids and usernames in a server 
+
+ctrl+c - to exit from top command
+
+uptime - to view the load average of a linux server.
+
+df -h - to view the disk space in a server
+
+du -sh * - to view the disk usage in particular folder or mount point                                                                                                                                     
+
