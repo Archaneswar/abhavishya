@@ -6,3 +6,13 @@ Features:
 •	You can view the data in the log to discover solutions to your difficulties in production.
 •	It provides an auto-highlighting function for the search fields to identify problems in your log files quickly.
 •	It allows you to visualize log files and display the necessary data and real-time statistics in graphics.
+
+Splunk
+Splunk is a sophisticated platform for analyzing machine data, especially logs generated frequently but seldom used effectively. Splunk is used for searching, monitoring, and analyzing machine-generated data using a web-based interface. It compiles all pertinent data into a central index that allows users to find the required information quickly.
+Features:
+•	It enables the examination of data from networks, servers, apps, and various other data sources.
+•	It is simple enough to deploy in a production environment.
+•	It provides attributes such as Splunk light to transfer data from many servers to the main Splunk engine for analysis.
+•	It indexes data in such a way that it produces powerful analytic insights.
+•	Its reports are accurate to the decimal point, allowing any organization to identify steps for improvement and take action, if necessary.
+
